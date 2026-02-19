@@ -35,7 +35,7 @@ function DiaDaSemana() {
   return (
     <div>
         <h2>1.1 - Dias da semana</h2>
-        <button onClick={verificarDia}>Verificar o dia da semana</button>
+        <button onClick={verificarDia}>Verificar os dias da semana</button>
     </div>
     
   )
