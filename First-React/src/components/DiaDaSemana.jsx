@@ -35,6 +35,7 @@ function DiaDaSemana() {
   return (
     <div>
         <h2>1.1 - Dias da semana</h2>
+        <p>-| Função para verificar qual dia da semana equivale ao número digitado. |-</p>
         <button onClick={verificarDia}>Verificar os dias da semana</button>
     </div>
     
