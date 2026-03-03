@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Jamero;
+  src: url("../src/assets/fonts/Jamero/JameroDEMO-Regular-BF69a44eb3c0bfa.ttf");
+}
+@font-face {
+  font-family: Inword;
+  src: url("../src/assets/fonts/Inword/InwordDEMO-Regular-BF69a449c84da42.ttf");
+}
+@font-face {
+  font-family: Seven;
+  src: url("../src/assets/fonts/Seven/Seven-Season-BF69a3cb2d78de9.otf");
+} {
+  
+}
+
+@theme{
+  --font-jamero: "Jamero";
+  --font-inword: "Inword";
+  --font-seven: "Seven";
+}
