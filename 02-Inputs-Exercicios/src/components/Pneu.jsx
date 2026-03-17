@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './Pneu.css'
+import './Components.css'
 
 function Pneu() {
     const [pressaoPneu, setPressaoPneu] = useState("");
@@ -31,7 +31,9 @@ function Pneu() {
         </div>
 
         <div className='button-container'>
-            <button onClick={calcularPressao}>Calcular Pressão</button>
+            <button onClick={calcularPressao}>
+                <span class="button_top"> Calcular Pressão</span>
+                </button>
         </div>
 
         <div>
