@@ -14,38 +14,62 @@
   gap: 20px; 
 }
 
-/* From Uiverse.io by Voxybuns */ 
-button {
-  /* Variables */
-  --button_radius: 0.75em;
-  --button_color: #e8e8e8;
-  --button_outline_color: #000000;
-  font-size: 17px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  border-radius: var(--button_radius);
-  background: var(--button_outline_color);
+.buttons {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
-.button_top {
-  display: block;
-  box-sizing: border-box;
-  border: 2px solid var(--button_outline_color);
-  border-radius: var(--button_radius);
-  padding: 0.75em 1.5em;
-  background: var(--button_color);
-  color: var(--button_outline_color);
-  transform: translateY(-0.2em);
-  transition: transform 0.1s ease;
+.buttons:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
 
-button:hover .button_top {
-  /* Pull the button upwards when hovered */
-  transform: translateY(-0.33em);
+.buttons:active {
+    color: #000
 }
 
-button:active .button_top {
-  /* Push the button downwards when pressed */
-  transform: translateY(0);
+.buttons:active:after {
+    background: transparent;
+}
+
+.buttons:hover:before {
+    opacity: 1;
+}
+
+.buttons:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }

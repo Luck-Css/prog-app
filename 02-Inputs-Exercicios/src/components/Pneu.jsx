@@ -31,8 +31,8 @@ function Pneu() {
         </div>
 
         <div className='button-container'>
-            <button onClick={calcularPressao}>
-                <span class="button_top"> Calcular Pressão</span>
+            <button onClick={calcularPressao} className="buttons">
+                <span> Calcular Pressão</span>
                 </button>
         </div>
 

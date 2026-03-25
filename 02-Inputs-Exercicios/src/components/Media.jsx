@@ -29,8 +29,8 @@ function Media() {
             <br />
         </div>
         <div className='button-container'>
-            <button onClick={calcularMedia}>
-                <span className="button_top"> Calcular Média</span>
+            <button onClick={calcularMedia} className="buttons">
+                <span > Calcular Média</span>
                 </button>
             <p>Resultado = {resultado}</p>
         </div>
