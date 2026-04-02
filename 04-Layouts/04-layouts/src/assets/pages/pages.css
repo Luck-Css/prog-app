@@ -1,0 +1,15 @@
+.cont-home{
+
+}
+.cont-contact{}
+
+.cont-products h1{
+    margin: 2vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  
+}
+.cont-products p{
+    margin: 5vh;
+}
