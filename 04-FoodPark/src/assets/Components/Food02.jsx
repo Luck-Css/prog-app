@@ -22,16 +22,70 @@ function Food02() {
         </p>
 
         <div>
-          <img src="/images/ValterioBranco.jpeg" 
-          alt="Valterio Branco"
-          className="w-full h-100 object-cover rounded-xl shadow-lg" 
+          <img src="/images/ValterioBranco.jpeg"
+            alt="Valterio Branco"
+            className="w-full h-100 object-cover rounded-xl shadow-lg"
           />
           <p className="text-sm italic text-green-900">
             “Eu não estou servindo comida. Eu sou o cozinheiro.”
           </p>
-        </div>  
+        </div>
       </section>
-      
+      <br />
+      <section className="text-center">
+        <h2 className="text-3xl font-bold text-green-900 mb-8">
+          Cardápio da Taberna
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto text-center">
+
+          <div>
+            <h3 className="text-xl font-bold text-green-900 mb-3">
+              Entradas
+            </h3>
+            <ul className="space-y-2 text-stone-800">
+              <li>Cristais Azuis</li>
+              <li>Nachos Los Pollos</li>
+              <li>Batatas Heisen</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-green-900 mb-3">
+              Pratos Principais
+            </h3>
+            <ul className="space-y-2 text-stone-800">
+              <li>Hambúrguer Heisenberg</li>
+              <li>Costelas Albuquerque</li>
+              <li>Frango do Laboratório</li>
+              <li>Chili do Deserto</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-green-900 mb-3">
+              Bebidas
+            </h3>
+            <ul className="space-y-2 text-stone-800">
+              <li>Blue Sky Drink</li>
+              <li>Pink Bear Lemonade</li>
+              <li>Café Galeão</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-green-900 mb-3">
+              Sobremesas
+            </h3>
+            <ul className="space-y-2 text-stone-800">
+              <li>Cheesecake Jane</li>
+              <li>Brownie Breaking</li>
+              <li>Pudim Azul Metilado</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
 
 
     </div>
