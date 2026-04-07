@@ -48,7 +48,7 @@ function Food02() {
               <li>Nachos Los Pollos</li>
               <li>Batatas Heisen</li>
             </ul>
-          </div>
+          </div> 
 
           <div>
             <h3 className="text-xl font-bold text-green-900 mb-3">
