@@ -1,0 +1,25 @@
+:root {
+  --Forest-500: #344e41;
+  --Forest-400: #3a5a40;
+  --Forest-300: #588157;
+  --Forest-200: #a3b18a;
+  --Forest-100: #dad7cd;
+}
+
+
+.app-cont {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  place-items: center;
+  color: var(--Forest-100);
+
+  
+  
+}
+
+.cont-card {
+  display: flex;
+  margin: 4rem;
+  gap: 40px;
+  flex-wrap: wrap;
+}

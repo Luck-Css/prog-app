@@ -1,0 +1,10 @@
+:root {
+  --Forest-500: #344e41;
+  --Forest-400: #3a5a40;
+  --Forest-300: #588157;
+  --Forest-200: #a3b18a;
+  --Forest-100: #dad7cd
+}
+*{
+    background-color: var(--Forest-400);
+}
