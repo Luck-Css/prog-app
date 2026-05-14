@@ -1,11 +1,10 @@
 import { useState } from 'react'
 
-
-
 import './App.css'
 import CardCavalo from './components/CardCavalo.jsx'
 import CardCarro from './components/CardCarro.jsx'
 import CardDino from './components/CardDino.jsx'
+import CardPokemon from './components/CardPokemon.jsx'
 
 
 function App() {
@@ -514,6 +513,18 @@ function App() {
 
         </div>
       </section>
+      {/* map  de Pokemon*/}
+      <h1>Map Pokemon</h1>
+      <div className='card-cont'>
+          { pokemonhos.map((Pokemon) => (
+            <CardPokemon 
+              p = {Pokemon}
+              key = {Pokemon.key}
+            />
+          ))
+
+          }
+      </div>
 
       <section>
 
