@@ -1,7 +1,12 @@
 import { useState } from 'react'
-import { FaHorse } from "react-icons/fa";
+
+
 
 import './App.css'
+import CardCavalo from './components/CardCavalo.jsx'
+import CardCarro from './components/CardCarro.jsx'
+import CardDino from './components/CardDino.jsx'
+
 
 function App() {
   const [cavalos, setCavalos] = useState([
@@ -164,182 +169,182 @@ function App() {
     {
       id: 101,
       nome: 'Tyrannosaurus rex',
-      família: 'Tyrannosauridae',
+      familia: 'Tyrannosauridae',
       peso: '8 toneladas',
       altura: '4 metros',
       comprimento: '12 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 102,
       nome: 'Stegosaurus',
-      família: 'Stegosauridae',
+      familia: 'Stegosauridae',
       peso: '5 toneladas',
       altura: '2.5 metros',
       comprimento: '9 metros',
-      períodoHistórico: 'Jurássico Superior'
+      periodo: 'Jurássico Superior'
     },
     {
       id: 103,
       nome: 'Triceratops',
-      família: 'Ceratopsidae',
+      familia: 'Ceratopsidae',
       peso: '6 toneladas',
       altura: '3 metros',
       comprimento: '9 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 104,
       nome: 'Velociraptor',
-      família: 'Dromaeosauridae',
+      familia: 'Dromaeosauridae',
       peso: '150 kg',
       altura: '1.8 metros',
       comprimento: '2 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      período: 'Cretáceo Superior'
     },
     {
       id: 105,
       nome: 'Brachiosaurus',
-      família: 'Brachiosauridae',
+      familia: 'Brachiosauridae',
       peso: '50 toneladas',
       altura: '15 metros',
       comprimento: '25 metros',
-      períodoHistórico: 'Jurássico Superior'
+      periodo: 'Jurássico Superior'
     },
     {
       id: 106,
       nome: 'Ankylosaurus',
-      família: 'Ankylosauridae',
+      familia: 'Ankylosauridae',
       peso: '6 toneladas',
       altura: '2.5 metros',
       comprimento: '9 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 107,
       nome: 'Diplodocus',
-      família: 'Diplodocidae',
+      familia: 'Diplodocidae',
       peso: '12 toneladas',
       altura: '6 metros',
       comprimento: '27 metros',
-      períodoHistórico: 'Jurássico Superior'
+      periodo: 'Jurássico Superior'
     },
     {
       id: 108,
       nome: 'Pteranodon',
-      família: 'Pteranodontidae',
+      familia: 'Pteranodontidae',
       peso: '90 kg',
       altura: '1.8 metros (asas)',
       comprimento: '7 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 109,
       nome: 'Spinosaurus',
-      família: 'Spinosauridae',
+      familia: 'Spinosauridae',
       peso: '10 toneladas',
       altura: '4 metros',
       comprimento: '15 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 110,
       nome: 'Allosaurus',
-      família: 'Allosauridae',
+      familia: 'Allosauridae',
       peso: '2 toneladas',
       altura: '3 metros',
       comprimento: '9 metros',
-      períodoHistórico: 'Jurássico Superior'
+      periodo: 'Jurássico Superior'
     },
     {
       id: 111,
       nome: 'Iguanodon',
-      família: 'Iguanodontidae',
+      familia: 'Iguanodontidae',
       peso: '3 toneladas',
       altura: '4 metros',
       comprimento: '10 metros',
-      períodoHistórico: 'Cretáceo Inferior'
+      periodo: 'Cretáceo Inferior'
     },
     {
       id: 112,
       nome: 'Carcharodontosaurus',
-      família: 'Carcharodontosauridae',
+      familia: 'Carcharodontosauridae',
       peso: '7 toneladas',
       altura: '3.5 metros',
       comprimento: '13 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 113,
       nome: 'Parasaurolophus',
-      família: 'Hadrosauridae',
+      familia: 'Hadrosauridae',
       peso: '3.5 toneladas',
       altura: '4 metros',
       comprimento: '10 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 114,
       nome: 'Therizinosaurus',
-      família: 'Therizinosauridae',
+      familia: 'Therizinosauridae',
       peso: '5 toneladas',
       altura: '5 metros',
       comprimento: '10 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     },
     {
       id: 115,
       nome: 'Archaeopteryx',
-      família: 'Archaeopterygidae',
+      familia: 'Archaeopterygidae',
       peso: '1 kg',
       altura: '0.5 metros',
       comprimento: '0.5 metros',
-      períodoHistórico: 'Jurássico Superior'
+      periodo: 'Jurássico Superior'
     },
     {
       id: 116,
       nome: 'Ceratosaurus',
-      família: 'Ceratosauridae',
+      familia: 'Ceratosauridae',
       peso: '1 tonelada',
       altura: '3 metros',
       comprimento: '7 metros',
-      períodoHistórico: 'Jurássico Superior'
+      periodo: 'Jurássico Superior'
     },
     {
       id: 117,
       nome: 'Deinonychus',
-      família: 'Dromaeosauridae',
+      familia: 'Dromaeosauridae',
       peso: '100 kg',
       altura: '1.5 metros',
       comprimento: '2.5 metros',
-      períodoHistórico: 'Cretáceo Inferior'
+      periodo: 'Cretáceo Inferior'
     },
     {
       id: 118,
       nome: 'Dilophosaurus',
-      família: 'Dilophosauridae',
+      familia: 'Dilophosauridae',
       peso: '500 kg',
       altura: '2 metros',
       comprimento: '6 metros',
-      períodoHistórico: 'Jurássico Inferior'
+      periodo: 'Jurássico Inferior'
     },
     {
       id: 119,
       nome: 'Iguanodon',
-      família: 'Iguanodontidae',
+      familia: 'Iguanodontidae',
       peso: '3 toneladas',
       altura: '4 metros',
       comprimento: '10 metros',
-      períodoHistórico: 'Cretáceo Inferior'
+      periodo: 'Cretáceo Inferior'
     },
     {
       id: 120,
       nome: 'Pachycephalosaurus',
-      família: 'Pachycephalosauridae',
+      familia: 'Pachycephalosauridae',
       peso: '500 kg',
       altura: '2 metros',
       comprimento: '4 metros',
-      períodoHistórico: 'Cretáceo Superior'
+      periodo: 'Cretáceo Superior'
     }
   ])
 
@@ -467,32 +472,56 @@ function App() {
 
   return (
     <>
-
-
+    <div className='app-cont'>
       <section>
         {/* map de cavalos */}
+        <h1>Map Cavalos</h1>
         <div className='card-cont'>
-
+          {cavalos.map((Cavalo) => (
+            <CardCavalo 
+              p = {Cavalo} 
+              key = {Cavalo.id} 
+            />
+          ))}
         </div>
+
       </section>
 
       <section>
         {/* map de carros */}
+        <h1>Map Carros</h1>
         <div className='card-cont'>
+          {carros.map ((Carro) => (
+            <CardCarro
+              p = {Carro}
+              key = {Carro.id} 
+            />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        {/* map  de Dinossauros*/}
+        <h1>Map Dinossauros</h1>
+        <div className='card-cont'>
+          {dino.map ((Dino) => (
+            <CardDino
+              p = {Dino}
+              key = {Dino.key} 
+            />
+          ))}
+        
 
         </div>
       </section>
 
       <section>
-        {/* map  de ... */}
-                <div className='card-cont'>
-
-        </div>
-      </section>
-
-      <section>
 
       </section>
+
+    </div>
+      
+
 
     </>
   )
